@@ -5,8 +5,6 @@ import tailwind from '@astrojs/tailwind';
 import { remarkReadingTime } from './src/utils/readTime.ts';
 import { siteConfig } from './src/data/site.config';
 
-import vercel from "@astrojs/vercel/serverless";
-
 // https://astro.build/config
 export default defineConfig({
   site: siteConfig.site,
@@ -29,5 +27,5 @@ export default defineConfig({
     },
     drafts: true
   }), sitemap(), tailwind()],
-  output: "server",
+  output: "static",
 });
