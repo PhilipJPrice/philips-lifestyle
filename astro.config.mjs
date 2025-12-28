@@ -31,13 +31,5 @@ export default defineConfig({
   }), sitemap(), tailwind()],
   output: "server",
     adapter: vercel({
-        speedInsights: {
-            enabled: true,
-            
-        },
-        webAnalytics: {
-            enabled: true,
-            
-        },
     })
 });
